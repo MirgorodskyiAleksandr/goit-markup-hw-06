@@ -84,6 +84,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .nav-list,
@@ -229,8 +230,8 @@ a {
     ),
     url("../images/people.jpg");
   color: #ffff;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -279,17 +280,25 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
   .hero-title {
     font-size: 56px;
     max-width: 496px;
   }
 }
 
-/* Features ( Section 1) */
-
-.features-container {
-  max-width: 1158px;
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
 }
+
+/* Features ( Section 1) */
 
 .features {
   padding-top: 96px;
@@ -299,8 +308,6 @@ a {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 16px;
-  padding-right: 16px;
   align-items: center;
   gap: 72px;
 }
@@ -333,9 +340,8 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .features {
-    padding-left: 16px;
-    padding-right: 16px;
+  .features-container {
+    max-width: 768px;
   }
 
   .features-list {
@@ -352,6 +358,10 @@ a {
 }
 
 @media screen and (min-width: 1158px) {
+  .features-container {
+    min-width: 1158px;
+  }
+
   .features {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -408,7 +418,8 @@ a {
 
 .caption {
   background-color: #f4f4fd;
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .subject {
@@ -520,7 +531,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .caption {
-    padding: 96px 108px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .subject-list {
@@ -539,7 +551,7 @@ a {
     min-width: 1158px;
   }
   .caption {
-    padding: 120px 0;
+    padding: 120px;
   }
 
   .subject-users {
@@ -696,6 +708,8 @@ a {
   align-items: baseline;
   flex-wrap: wrap;
   gap: 120px;
+  justify-content: flex-start;
+  padding: 40px 16px;
 }
 
 .footer-logo-text {
@@ -812,7 +826,6 @@ a {
 .footer-email-container {
   margin: 0 auto;
   text-align: center;
-  min-width: 100%;
 }
 
 .footer-form {
@@ -872,6 +885,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .page-footer.footer-container {
+    max-width: 584px;
+  }
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -879,6 +895,7 @@ a {
     align-items: flex-start;
     padding: 0 108px;
     gap: 72px 24px;
+    margin: 0 auto;
   }
 
   .footer-logo-text,
@@ -906,14 +923,20 @@ a {
     padding: 100px 0;
   }
 
-  .footer-container {
+  .page-footer.container {
     display: flex;
     align-items: baseline;
+    gap: unset;
+  }
+  .footer-container {
+    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: nowrap;
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    gap: 40px;
   }
 
   .footer-inner {
@@ -932,8 +955,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 264px;
-    margin-right: 120px;
-    margin-left: 15px;
   }
 
   .footer-logo .logo-part {
@@ -957,12 +978,10 @@ a {
     letter-spacing: 0.02em;
     color: var(--text-color-social);
     margin-bottom: 16px;
-    display: inline-block;
   }
 
   .social-container {
     max-width: 208px;
-    margin-right: 20px;
   }
 
   .social-icons-list {
@@ -997,12 +1016,10 @@ a {
     fill: var(--text-color-icons-final);
   }
 
-  .footer-email-container {
-    margin-left: auto;
-  }
   .footer-form {
     display: flex;
     gap: 24px;
+    margin-top: 16px;
   }
 
   .footer-input {
@@ -1222,7 +1239,7 @@ a {
   top: 50%;
   left: 50%;
   background: #fcfcfc;
-  width: 408px;
+  width: 288px;
   min-height: 584px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
@@ -1421,4 +1438,10 @@ a {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
 }
