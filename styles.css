@@ -228,7 +228,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/people.jpg");
+    url("./images/hero/hero-mob-min.jpg");
   color: #ffff;
   padding-top: 72px;
   padding-bottom: 72px;
@@ -238,6 +238,18 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+/* ------------Mobile retina------ */
+@media (max-width: 767px) and (min-resolutoin: 192dpi),
+  (max-width: 767px) and (min-resolutoin: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("./images/hero/hero-mob@2x-min.jpg");
+  }
 }
 
 .hero-title {
@@ -281,8 +293,25 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("./images/hero/hero-tab-min.jpg");
     padding-top: 112px;
     padding-bottom: 112px;
+  }
+
+  /* ------------Tab retina------ */
+  @media (min-width: 768px) and (max-width: 1157px) and (min-resolutoin: 192dpi),
+    (min-width: 768px) and (max-width: 1157px) and (min-resolutoin: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("./images/hero/hero-tab@2x-min.jpg");
+    }
   }
 
   .hero-title {
@@ -293,11 +322,28 @@ a {
 
 @media screen and (min-width: 1158px) {
   .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("./images/hero/hero-desk-min.jpg");
     padding-top: 188px;
     padding-bottom: 188px;
   }
 }
 
+/* ------------Desk retina------ */
+
+@media (min-width: 1158px) and (min-resolutoin: 192dpi),
+  (min-width: 1158px) and (min-resolutoin: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("./images/hero/hero-desk@2x-min.jpg");
+  }
+}
 /* Features ( Section 1) */
 
 .features {
