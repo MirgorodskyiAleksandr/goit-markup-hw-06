@@ -67,7 +67,7 @@ a {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -597,7 +597,7 @@ a {
     min-width: 1158px;
   }
   .caption {
-    padding: 120px;
+    padding: 120px 0;
   }
 
   .subject-users {
